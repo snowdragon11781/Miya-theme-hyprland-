@@ -1,0 +1,111 @@
+* {
+    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-size: 16px;
+    min-height: 0;
+    font-weight: bold;
+}
+
+window#waybar {
+    
+    border-radius: 0px 0px 10px 10px; /* top-left, top-right, bottom-right, bottom-left */
+    background: transparent;
+    background-color: rgba(20, 20, 34, 0.5);
+    color: rgba(0, 0, 0, 0);;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    border: 3px solid #ff0028;
+}
+
+#window {
+    margin: 8px;
+    padding-left: 8;
+    padding-right: 8;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    color: #ff0026;
+    border-top: 2px solid #49000b;
+}
+
+#workspaces button {
+    padding: 4px;
+    color: #a00018
+}
+
+#workspaces button.focused {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ff0000;
+    border-radius: 10px 10px 10px 10px;
+    border-top: 2px solid #9b0017;
+}
+
+#workspaces button.active {
+    background-color: rgba(88, 28, 28, 0.3);
+    color: #ff0028;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #ff0028;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#tray,
+#network,
+#mode,
+#scratchpad {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#clock {
+    color: #ff0026;
+    border-bottom: 2px solid #ff0026;
+}
+
+#clock.date {
+    color: #ff0028;
+    border-bottom: 2px solid #ff0028;
+}
+
+#pulseaudio {
+    color: #ff0028;
+    border-bottom: 2px solid #ff0028;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#custom-vpn {
+    color: lavender;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
