@@ -1,0 +1,86 @@
+
+* {
+  font-family: 'MapleMono-TTF';
+  font-size: 18px;
+}
+
+/* Window */
+window {
+  margin: 0px;
+  padding: 10px;
+  border: 2px solid #ff0028;
+  border-radius: 10px;
+  background-color: rgba(20, 20, 34, 0.5);
+}
+
+/* Inner Box */
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(233, 7, 7, 0);
+}
+
+/* Outer Box */
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(255, 3, 3, 0);
+}
+
+/* Scroll */
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+/* Input */
+#input {
+  margin: 5px 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 0.1em;
+  color: #ff0028;
+  background-color: rgba(30, 177, 182, 0);
+}
+
+#input image {
+    border: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+#input * {
+  outline: 4px solid #ff0028!important;
+}
+
+/* Text */
+#text {
+  margin: 5px;
+  border: none;
+  color: #ff0028;
+}
+
+#entry {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#entry arrow {
+  border: none;
+  color: rgba(0, 0, 0, 0);
+}
+
+/* Selected Entry */
+#entry:selected {
+  border: 0.11em solid #ff0028;
+}
+
+#entry:selected #text {
+  color: #ff0028;
+}
+
+#entry:drop(active) {
+  background-color: rgba(65, 255, 48, 0)!important;
+}
